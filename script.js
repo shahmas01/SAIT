@@ -7,13 +7,13 @@
   const alumni = [
 
     {
-      image: "./aymen-removebg-preview.png",
+      image: "./Muhammed_Shibin_1680066420-removebg-preview.png",
 
       quote:
         "I can never forget the contributions of the IT department and my faculties towards helping me explore and experiment with different career opportunities.",
 
       name:
-        "Muhammed Ayimen Abdul Latheef",
+        "Muhammed Shibin",
 
       batch:
         "B.Tech Information Technology",
@@ -36,7 +36,7 @@
         "My journey at CUSAT helped me build a strong foundation in technology and prepared me to explore opportunities beyond the classroom.",
 
       name:
-        "Ashwin Anil",
+        "Payal Rani",
 
       batch:
         "B.Tech Information Technology",
