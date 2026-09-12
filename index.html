@@ -1,0 +1,948 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SAIT CUSAT</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-light">
+
+    <div class="container-fluid px-lg-5">
+
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img
+                src="logo-removebg-preview.png"
+                alt="SAIT Logo"
+                class="nav-logo"
+            >
+
+            <span>SAIT CUSAT</span>
+        </a>
+
+
+        <!-- Mobile Button -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Placements</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+
+                <li class="nav-item hostel-item">
+
+                    <a class="nav-link hostel-btn" href="#">
+                        Hostels
+                    </a>
+
+                    <span class="new-badge">New</span>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Alumni</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="executives.html">Executives</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Notes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="container-fluid px-lg-5 pb-5">
+
+    <div class="row g-4">
+
+
+        <!-- ================= LEFT HERO ================= -->
+
+        <div class="col-lg-7">
+
+            <section class="hero-card">
+
+                <!-- Decorative glow -->
+                <div class="hero-glow glow-one"></div>
+                <div class="hero-glow glow-two"></div>
+
+                <!-- Dots -->
+                <div class="dot-pattern"></div>
+
+
+                <div class="hero-content">
+
+                    <p class="hero-small-title">
+                        STUDENT ASSOCIATION OF
+                    </p>
+
+                    <h1>
+                        INFORMATION
+                        <br>
+                        TECHNOLOGY
+                    </h1>
+
+                    <div class="gradient-line"></div>
+
+                    <p class="hero-subtitle">
+                        SAIT CUSAT
+                    </p>
+
+                </div>
+
+
+                <!-- Large SAIT -->
+                <div class="big-sait">
+                    SAIT
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+        <!-- ================= RIGHT SIDE ================= -->
+
+        <div class="col-lg-5">
+
+            <div class="right-column">
+
+
+                <!-- ================= ABOUT ================= -->
+
+                <section class="about-card">
+
+                    <div class="about-decoration"></div>
+
+                    <h2>
+                        <span></span>
+                        About SAIT
+                    </h2>
+
+                    <p>
+                        Founded in 1995, the Department of Information
+                        Technology at Cochin University of Science and
+                        Technology is a dynamic hub of innovation. Our
+                        dedicated faculty explores user-centric interfaces,
+                        cybersecurity, and artificial intelligence, pushing
+                        the boundaries of IT.
+                    </p>
+
+                    <p>
+                        Committed to excellence, we provide a holistic
+                        education in cutting-edge technologies. The Student
+                        Association of IT (SAIT) enhances student experience
+                        through workshops, magazines, and tech projects,
+                        fostering collaboration and creating a vibrant
+                        learning environment.
+                    </p>
+
+
+                    <button class="explore-btn" onclick="exploreSAIT()">
+                        EXPLORE
+                        <span>→</span>
+                    </button>
+
+
+                    <div class="about-dots"></div>
+
+                </section>
+
+
+
+                <!-- ================= LOGO CARD ================= -->
+
+                <section class="logo-card">
+
+                    <div class="circle-decoration circle-one"></div>
+                    <div class="circle-decoration circle-two"></div>
+
+                    <img
+                        src="logo-removebg-preview.png"
+                        alt="SAIT CUSAT"
+                        class="main-logo"
+                    >
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- events -->
+
+<!-- ================= UPCOMING EVENTS ================= -->
+
+ <!-- ================= UPCOMING EVENTS ================= -->
+<section class="events-section">
+
+    <div class="events-container">
+
+        <div class="events-heading">
+            <div>
+                
+                <h2>Upcoming <b>Events</b></h2>
+            </div>
+
+            <button class="view-all-btn">
+                View All <span>→</span>
+            </button>
+        </div>
+
+
+        <!-- 4 CARDS IN ONE ROW -->
+        <div class="events-grid">
+
+            <!-- CARD 01 -->
+            <div class="event-card">
+
+                <div class="event-card-inner">
+
+                    <!-- FRONT -->
+                    <div class="event-card-front">
+
+                        <div class="event-image">
+                            <img src="./hack.jpeg" alt="SAIT Hackathon">
+
+                            <div class="event-date">
+                                <strong>20</strong>
+                                <small>SEP</small>
+                            </div>
+                        </div>
+
+                        <div class="event-front-content">
+
+                            <span class="event-category">
+                                HACKATHON
+                            </span>
+
+                            <h3>HACK EUROPA 3.0</h3>
+
+                            <p>
+                                Build, innovate and create something amazing
+                                with fellow tech enthusiasts.
+                            </p>
+
+                            <div class="event-bottom">
+                                <span></span>
+                                <div class="event-number">01</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BACK -->
+                    <div class="event-card-back">
+
+                        <div class="back-number">01</div>
+
+                        <span class="back-category">
+                            SAIT CUSAT
+                        </span>
+
+                        <h3>HACK EUROPA 3.0</h3>
+
+                        <p class="back-description">
+                            Join us for an exciting coding experience where
+                            students solve real-world problems and compete
+                            with fellow developers.
+                        </p>
+
+                        <div class="event-details">
+
+                            <div class="detail">
+                                <i>📅</i>
+                                <div>
+                                    <small>DATE</small>
+                                    <span>20 September 2026</span>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <i>◷</i>
+                                <div>
+                                    <small>TIME</small>
+                                    <span>10:00 AM – 4:00 PM</span>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <i>📍</i>
+                                <div>
+                                    <small>VENUE</small>
+                                    <span>CUSAT Campus</span>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <i>👥</i>
+                                <div>
+                                    <small>ORGANIZED BY</small>
+                                    <span>SAIT CUSAT</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="register-btn">
+                            Register Now <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- CARD 02 -->
+            <div class="event-card">
+
+                <div class="event-card-inner">
+
+                    <div class="event-card-front">
+
+                        <div class="event-image">
+                            <img src="./vibhava.jpeg" alt="Web Development Workshop">
+
+                            <div class="event-date">
+                                <strong>25</strong>
+                                <small>SEP</small>
+                            </div>
+                        </div>
+
+                        <div class="event-front-content">
+
+                            <span class="event-category">
+                                TECH EVENT
+                            </span>
+
+                            <h3>VIBHAVA</h3>
+
+                            <p>
+                                Learn modern web development technologies
+                                through an interactive workshop.
+                            </p>
+
+                            <div class="event-bottom">
+                                <span></span>
+                                <div class="event-number">02</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="event-card-back">
+
+                        <div class="back-number">02</div>
+
+                        <span class="back-category">
+                            SAIT CUSAT
+                        </span>
+
+                        <h3>VIBHAVA</h3>
+
+                        <p class="back-description">
+                            Get hands-on experience with HTML, CSS,
+                            JavaScript and Bootstrap from industry experts.
+                        </p>
+
+                        <div class="event-details">
+
+                            <div class="detail">
+                                <i>📅</i>
+                                <div>
+                                    <small>DATE</small>
+                                    <span>25 September 2026</span>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <i>◷</i>
+                                <div>
+                                    <small>TIME</small>
+                                    <span>2:00 PM – 5:00 PM</span>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <i>📍</i>
+                                <div>
+                                    <small>VENUE</small>
+                                    <span>IT Department</span>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <i>👥</i>
+                                <div>
+                                    <small>ORGANIZED BY</small>
+                                    <span>SAIT CUSAT</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="register-btn">
+                            Register Now <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- CARD 03 -->
+            <div class="event-card">
+
+                <div class="event-card-inner">
+
+                    <div class="event-card-front">
+
+                        <div class="event-image">
+                            <img src="./dishna.jpeg" alt="Future of AI">
+
+                            <div class="event-date">
+                                <strong>30</strong>
+                                <small>SEP</small>
+                            </div>
+                        </div>
+
+                        <div class="event-front-content">
+
+                            <span class="event-category">
+                                TECH & CULTURAL
+                            </span>
+
+                            <h3>Dhishna</h3>
+
+                            <p>
+                                Dhishna is CUSAT's annual technical fest, featuring competitions, workshops, exhibitions, and exciting tech events.
+                            </p>
+
+                            <div class="event-bottom">
+                                <span></span>
+                                <div class="event-number">03</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="event-card-back">
+
+                        <div class="back-number">03</div>
+
+                        <span class="back-category">
+                            SAIT CUSAT
+                        </span>
+
+                        <h3>Dhishna</h3>
+
+                        <p class="back-description">
+                            Discover how artificial intelligence is shaping
+                            the future of technology and innovation.
+                        </p>
+
+                        <div class="event-details">
+
+                            <div class="detail">
+                                <i>📅</i>
+                                <div>
+                                    <small>DATE</small>
+                                    <span>30 September 2026</span>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <i>◷</i>
+                                <div>
+                                    <small>TIME</small>
+                                    <span>11:00 AM – 1:00 PM</span>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <i>📍</i>
+                                <div>
+                                    <small>VENUE</small>
+                                    <span>Open-air Auditorium</span>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <i>👥</i>
+                                <div>
+                                    <small>ORGANIZED BY</small>
+                                    <span>SAIT CUSAT</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="register-btn">
+                            Register Now <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- CARD 04 -->
+            <div class="event-card">
+
+                <div class="event-card-inner">
+
+                    <div class="event-card-front">
+
+                        <div class="event-image">
+                            <img src="./code.png" alt="Coding Challenge">
+
+                            <div class="event-date">
+                                <strong>05</strong>
+                                <small>OCT</small>
+                            </div>
+                        </div>
+
+                        <div class="event-front-content">
+
+                            <span class="event-category">
+                                COMPETITION
+                            </span>
+
+                            <h3>Coding Challenge</h3>
+
+                            <p>
+                                Test your problem-solving skills and
+                                compete with talented developers.
+                            </p>
+
+                            <div class="event-bottom">
+                                <span></span>
+                                <div class="event-number">04</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="event-card-back">
+
+                        <div class="back-number">04</div>
+
+                        <span class="back-category">
+                            SAIT CUSAT
+                        </span>
+
+                        <h3>Coding Challenge</h3>
+
+                        <p class="back-description">
+                            Challenge yourself, solve interesting problems
+                            and compete with other students.
+                        </p>
+
+                        <div class="event-details">
+
+                            <div class="detail">
+                                <i>📅</i>
+                                <div>
+                                    <small>DATE</small>
+                                    <span>05 October 2026</span>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <i>◷</i>
+                                <div>
+                                    <small>TIME</small>
+                                    <span>9:30 AM – 1:00 PM</span>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <i>📍</i>
+                                <div>
+                                    <small>VENUE</small>
+                                    <span>CUSAT Campus</span>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <i>👥</i>
+                                <div>
+                                    <small>ORGANIZED BY</small>
+                                    <span>SAIT CUSAT</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="register-btn">
+                            Register Now <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- ================= PAST RECRUITERS ================= -->
+ <!-- ================= PLACEMENTS SECTION ================= -->
+
+<section class="placement-section">
+
+  <div class="placement-container">
+
+    <!-- LEFT SIDE -->
+    <div class="placement-info">
+
+      <span class="placement-tag">PLACEMENTS & CAREERS</span>
+
+      <h2>
+        Where <span>Talent</span><br>
+        Meets Opportunity.
+      </h2>
+
+      <p>
+        Our students connect with leading companies through
+        campus placements, internships and career opportunities.
+      </p>
+
+      <!-- Placement Stats -->
+      <div class="placement-stats">
+
+        <div class="placement-stat">
+          <h3><span>70%</span></h3>
+          <p>Placement Rate</p>
+        </div>
+
+        <div class="placement-stat">
+          <h3><span>50+</span></h3>
+          <p>Companies</p>
+        </div>
+
+        <div class="placement-stat">
+          <h3><span>100+</span></h3>
+          <p>Opportunities</p>
+        </div>
+
+      </div>
+
+      <a href="#" class="placement-btn">
+        Explore Careers
+        <span>↗</span>
+      </a>
+
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="recruiter-area">
+
+      <div class="recruiter-heading">
+        <span>OUR RECRUITERS</span>
+        <h3>Trusted by Industry Leaders</h3>
+      </div>
+
+      <div class="recruiter-wall">
+
+        <!-- Row 1 -->
+        <div class="recruiter-logo">
+          <img src="./tcs (1).png" alt="TCS">
+        </div>
+
+        <div class="recruiter-logo featured">
+          <img src="./cisco.png" alt="Cisco">
+        </div>
+
+        <div class="recruiter-logo">
+          <img src="./infosys (1).png" alt="Infosys">
+        </div>
+
+
+        <!-- Row 2 -->
+        <div class="recruiter-logo">
+          <img src="./ey (1).png" alt="EY">
+        </div>
+
+        <div class="recruiter-logo">
+          <img src="./wipro-removebg-preview.png" alt="Wipro">
+        </div>
+
+        <div class="recruiter-logo">
+          <img src="./cognizant2.png" alt="cognizent">
+        </div>
+
+
+        <!-- Row 3 -->
+        <div class="recruiter-logo">
+          <img src="./soti-removebg-preview.png" alt="SOTI">
+        </div>
+
+        <div class="recruiter-logo">
+          <img src="./suthurland-removebg-preview.png" alt="Sutherland">
+        </div>
+
+        <div class="recruiter-logo">
+          <img src="./incture-removebg-preview.png" alt="Incture">
+        </div>
+
+
+        <!-- Row 4 -->
+        <div class="recruiter-logo">
+          <img src="./pwc-logo-removebg-preview.png" alt="PwC">
+        </div>
+
+        <div class="recruiter-logo">
+          <img src="./Experian-Logo.wine-removebg-preview.png" alt="Experian">
+        </div>
+
+        <div class="recruiter-logo">
+          <img src="./ust2.png" alt="UST">
+        </div>
+
+
+        <!-- Row 5 -->
+        <div class="recruiter-logo">
+          <img src="./qburst-removebg-preview.png" alt="QBurst">
+        </div>
+
+        <div class="recruiter-logo">
+          <img src="./ibm.png" alt="IBM">
+        </div>
+
+        <div class="recruiter-logo">
+          <img src="./l_T-removebg-preview.png" alt="L&T Technology Services">
+        </div>
+
+      </div>
+
+      <p class="recruiter-note">
+        And many more industry opportunities...
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     FEATURED ALUMNI
+===================================================== -->
+
+<!-- =====================================================
+     FEATURED ALUMNI
+===================================================== -->
+
+<section class="alumni-section">
+
+  <div class="alumni-container">
+
+    <!-- HEADING -->
+    <div class="alumni-heading">
+
+      <div>
+        <span class="alumni-tag">ALUMNI NETWORK</span>
+
+        <h2>
+          From CUSAT<br>
+          <span>to the world.</span>
+        </h2>
+      </div>
+
+      <p>
+        Our alumni continue to create impact across technology,
+        business, research and innovation around the world.
+      </p>
+
+    </div>
+
+
+    <!-- FEATURED ALUMNI SLIDER -->
+    <div class="alumni-feature">
+
+      <!-- IMAGE -->
+      <div class="alumni-image">
+
+        <img
+          id="alumniImage"
+          src="./aymen-removebg-preview.png"
+          alt="Featured Alumni"
+        >
+
+        <div class="alumni-image-label">
+          FEATURED ALUMNI
+        </div>
+
+      </div>
+
+
+      <!-- CONTENT -->
+      <div class="alumni-content">
+
+        <span class="quote-mark">“</span>
+
+        <p
+          class="alumni-quote"
+          id="alumniQuote"
+        >
+          I can never forget the contributions of the IT
+          department and my faculties towards helping me
+          explore and experiment with different career
+          opportunities.
+        </p>
+
+
+        <div class="alumni-person">
+
+          <h3 id="alumniName">
+            Muhammed Ayimen Abdul Latheef
+          </h3>
+
+          <p id="alumniBatch">
+            B.Tech Information Technology
+            <span>•</span>
+            2019 – 2023
+          </p>
+
+          <strong id="alumniRole">
+            Global Startup Analyst
+          </strong>
+
+          <small id="alumniCompany">
+            Techstars Ventures
+          </small>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+        <div class="alumni-bottom">
+
+          <div class="alumni-count">
+
+            <span id="alumniCurrent">01</span>
+
+            <div></div>
+
+            <span id="alumniTotal">03</span>
+
+          </div>
+
+
+         <div class="alumni-arrows">
+
+  <button
+    type="button"
+    id="prevAlumni"
+    aria-label="Previous alumni">
+    ←
+  </button>
+
+  <button
+    type="button"
+    id="nextAlumni"
+    aria-label="Next alumni">
+    →
+  </button>
+
+</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
