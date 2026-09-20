@@ -1,5 +1,5 @@
  /* =========================================
-   SAIT INTRO + HOMEPAGE JAVASCRIPT
+   SAIT WEBSITE JAVASCRIPT
 ========================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -17,10 +17,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =========================================
+       INTRO - PLAY ONLY ON FIRST VISIT
+    ========================================= */
+
+    const introPlayed = sessionStorage.getItem("saitIntroPlayed");
+
+
+    /* =========================================
        ENTER MAIN WEBSITE
     ========================================= */
 
     const enterSite = () => {
+
+        /* Remember that intro has played */
+        sessionStorage.setItem("saitIntroPlayed", "true");
+
 
         /* Fade out intro */
         if (introContainer) {
@@ -28,26 +39,23 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
 
-        /* Show main content */
+        /* Show homepage */
         if (mainContent) {
             mainContent.style.opacity = "1";
         }
 
 
-        /* Enable page scrolling */
+        /* Enable scrolling */
         document.body.style.overflow = "auto";
 
 
-        /* =========================================
-           FIX NAVBAR AFTER INTRO
-        ========================================= */
-
+        /* Fix navbar */
         if (navbar) {
             navbar.classList.add("navbar-fixed");
         }
 
 
-        /* Remove intro after fade */
+        /* Completely remove intro */
         setTimeout(() => {
 
             if (introContainer) {
@@ -60,23 +68,85 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =========================================
-       VIDEO ENDS
+       CHECK INTRO STATUS
     ========================================= */
 
-    if (introVideo) {
+    if (introPlayed) {
 
-        introVideo.addEventListener("ended", enterSite);
+        /*
+        =========================================
+        RETURNING TO WEBSITE
 
-    }
+        Example:
+        Executives → Home
+        Events → Home
+        Placements → Home
+
+        Intro will NOT play again.
+        =========================================
+        */
+
+        if (introContainer) {
+            introContainer.style.display = "none";
+            introContainer.style.opacity = "0";
+        }
+
+        if (mainContent) {
+            mainContent.style.opacity = "1";
+        }
+
+        document.body.style.overflow = "auto";
+
+        if (navbar) {
+            navbar.classList.add("navbar-fixed");
+        }
+
+    } else {
+
+        /*
+        =========================================
+        FIRST VISIT
+
+        Intro plays normally.
+        =========================================
+        */
+
+        if (introContainer) {
+            introContainer.style.display = "flex";
+            introContainer.style.opacity = "1";
+        }
+
+        if (mainContent) {
+            mainContent.style.opacity = "0";
+        }
+
+        document.body.style.overflow = "hidden";
 
 
-    /* =========================================
-       SKIP BUTTON
-    ========================================= */
+        /* =========================================
+           VIDEO ENDS
+        ========================================= */
 
-    if (skipBtn) {
+        if (introVideo) {
 
-        skipBtn.addEventListener("click", enterSite);
+            introVideo.addEventListener("ended", () => {
+                enterSite();
+            });
+
+        }
+
+
+        /* =========================================
+           SKIP BUTTON
+        ========================================= */
+
+        if (skipBtn) {
+
+            skipBtn.addEventListener("click", () => {
+                enterSite();
+            });
+
+        }
 
     }
 
