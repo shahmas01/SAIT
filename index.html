@@ -6,241 +6,312 @@
 
     <title>SAIT CUSAT</title>
 
+     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Bootstrap -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+        rel="stylesheet">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-   crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet" />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css"
-  integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw==" 
-  crossorigin="anonymous" referrerpolicy="no-referrer"  rel="stylesheet"/>
+        rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css"
+     integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer"  rel="stylesheet"/>
+
+      <link rel="stylesheet" href="demo.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="executives.css">
+   
+
 </head>
 
 <body>
+ 
+  <!-- ================= INTRO ================= -->
 
+    <div id="intro-container">
+    <video id="intro-video" autoplay muted playsinline>
+        <source src="./intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <button id="skip-btn">Skip Intro</button>
+    </div>
+ 
 <!-- ================= NAVBAR ================= -->
+<header class="navbar-wrapper">
 
-<nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar">
 
-    <div class="container-fluid px-lg-5">
-
-        <!-- Logo -->
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-            <img
-                src="logo-removebg-preview.png"
-                alt="SAIT Logo"
-                class="nav-logo"
-            >
+        <!-- LOGO -->
+        <a href="#home" class="brand">
+            <div class="brand-logo">
+                <img src="./logo-removebg-preview.png" alt="SAIT Logo">
+            </div>
 
             <span>SAIT CUSAT</span>
         </a>
 
+        <!-- NAVIGATION -->
+        <div class="nav-links">
 
-        <!-- Mobile Button -->
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarMenu"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <a href="#home" class="active">Home</a>
 
+            <a href="#placements">Placements</a>
 
-        <!-- Navigation -->
-        <div class="collapse navbar-collapse" id="navbarMenu">
+            <a href="#events">Events</a>
 
-            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+            <a href="#hostels" class="hostel-link">
+                Hostels
+                <span>New</span>
+            </a>
 
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
+            <a href="#alumni">Alumni</a>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#placements">Placements</a>
-                </li>
+            <a href="./executives.html">Executives</a>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#events">Events</a>
-                </li>
-
-                <li class="nav-item hostel-item">
-
-                    <a class="nav-link hostel-btn" href="#">
-                        Hostels
-                    </a>
-
-                    <span class="new-badge">New</span>
-
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#alumni">Alumni</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="executives.html">Executives</a>
-                </li>
-
-                
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
-                </li>
-
-            </ul>
+            <a href="#contact">Contact Us</a>
 
         </div>
+
+        <!-- SEARCH -->
+        <button class="search-btn">
+            <i class="bi bi-search"></i>
+        </button>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero-section" id="home">
+
+    <!-- Decorative background -->
+    <div class="hero-glow glow-one"></div>
+    <div class="hero-glow glow-two"></div>
+    <div class="hero-grid"></div>
+
+
+    <div class="container-fluid hero-container">
+
+        <div class="row align-items-center">
+
+            <!-- LEFT SIDE -->
+
+            <div class="col-lg-5 hero-content">
+
+                <div class="small-heading">
+                    STUDENT ASSOCIATION OF
+                </div>
+
+                <h1>
+                    INFORMATION
+                    <br>
+                    <span>TECHNOLOGY</span>
+                </h1>
+
+                <div class="department-line">
+                    <span></span>
+                    <p>SAIT CUSAT</p>
+                </div>
+
+                <p class="hero-description">
+                    Empowering minds. Building tomorrow.
+                    The Student Association of Information Technology
+                    at Cochin University of Science and Technology —
+                    where technology meets community, creativity
+                    and collaboration.
+                </p>
+
+                <!-- BUTTONS -->
+
+                <div class="hero-buttons">
+
+                    <a href="#about" class="primary-btn">
+                        Explore Our Department
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="#intro" class="secondary-btn">
+                        <span class="play-icon">
+                            <i class="bi bi-play-fill"></i>
+                        </span>
+
+                        Watch Intro
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="col-lg-7 hero-visual">
+
+                <div class="visual-container">
+
+                 
+
+                    <!-- Rotating SAIT Logo -->
+
+                    <div class="logo-stage">
+
+                        <div class="rotating-logo">
+
+                            <img
+                                src="./new.png"
+                                alt="SAIT Logo"
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <!-- Platform -->
+
+                    <div class="platform">
+
+                        <div class="platform-ring"></div>
+
+                        <div class="platform-light"></div>
+
+                    </div>
+
+                    <!-- Right words -->
+
+                    <div class="hero-words">
+                        <span>LEARN</span>
+                        <span>BUILD</span>
+                        <span>INNOVATE</span>
+                        <span>TOGETHER</span>
+
+                        <div></div>
+                    </div>
+
+                    <!-- Vertical dots -->
+
+                    <div class="vertical-dots">
+                        <span class="selected"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+    <div class="about-image">
+
+        <div class="image-glow"></div>
+
+        <img
+            src="assets/cusat.jpg"
+            alt="CUSAT Campus"
+        >
 
     </div>
 
-</nav>
+
+    <div class="about-content">
+
+        <div class="section-label">
+            ABOUT SAIT
+        </div>
+
+        <h2>
+            More Than Just a
+            <br>
+            Department
+        </h2>
+
+        <p>
+            SAIT is a vibrant community of tech enthusiasts,
+            innovators and problem solvers. We strive to create
+            a space where ideas turn into impact through learning,
+            collaboration and real-world opportunities.
+        </p>
+
+        <a href="#" class="outline-btn">
+            Know More
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+    </div>
 
 
-<!-- ================= MAIN ================= -->
+    <div class="about-features">
 
-<main class="container-fluid px-lg-5 pb-5">
+        <div class="feature">
 
-    <div class="row g-4">
+            <div class="feature-icon">
+                <i class="bi bi-book"></i>
+            </div>
 
-
-        <!-- ================= LEFT HERO ================= -->
-
-        <div class="col-lg-7">
-
-            <section class="hero-card">
-
-                <!-- Decorative glow -->
-                <div class="hero-glow glow-one"></div>
-                <div class="hero-glow glow-two"></div>
-
-                <!-- Dots -->
-                <div class="dot-pattern"></div>
-
-
-                <div class="hero-content">
-
-                    <p class="hero-small-title">
-                        STUDENT ASSOCIATION OF
-                    </p>
-
-                    <h1>
-                        INFORMATION
-                        <br>
-                        TECHNOLOGY
-                    </h1>
-
-                    <div class="gradient-line"></div>
-
-                    <p class="hero-subtitle">
-                        SAIT CUSAT
-                    </p>
-
-                </div>
-
-
-                <!-- Large SAIT -->
-                <div class="big-sait">
-                    SAIT
-                </div>
-
-            </section>
+            <div>
+                <strong>Academic Excellence</strong>
+                <span>Building future-ready technologists</span>
+            </div>
 
         </div>
 
 
+        <div class="feature">
 
-        <!-- ================= RIGHT SIDE ================= -->
+            <div class="feature-icon">
+                <i class="bi bi-people"></i>
+            </div>
 
-        <div class="col-lg-5">
+            <div>
+                <strong>Student Initiatives</strong>
+                <span>Events, clubs, workshops & more</span>
+            </div>
 
-            <div class="right-column">
-
-
-                <!-- ================= ABOUT ================= -->
-
-                <section class="about-card">
-
-                    <div class="about-decoration"></div>
-
-                    <h2>
-                        <span></span>
-                        About SAIT
-                    </h2>
-
-                    <p>
-                        Founded in 1995, the Department of Information
-                        Technology at Cochin University of Science and
-                        Technology is a dynamic hub of innovation. Our
-                        dedicated faculty explores user-centric interfaces,
-                        cybersecurity, and artificial intelligence, pushing
-                        the boundaries of IT.
-                    </p>
-
-                    <p>
-                        Committed to excellence, we provide a holistic
-                        education in cutting-edge technologies. The Student
-                        Association of IT (SAIT) enhances student experience
-                        through workshops, magazines, and tech projects,
-                        fostering collaboration and creating a vibrant
-                        learning environment.
-                    </p>
+        </div>
 
 
-                    <button class="explore-btn" onclick="exploreSAIT()">
-                        EXPLORE
-                        <span>→</span>
-                    </button>
+        <div class="feature">
 
+            <div class="feature-icon">
+                <i class="bi bi-briefcase"></i>
+            </div>
 
-                    <div class="about-dots"></div>
-
-                </section>
-
-
-
-                <!-- ================= LOGO CARD ================= -->
-
-                <section class="logo-card">
-
-                    <div class="circle-decoration circle-one"></div>
-                    <div class="circle-decoration circle-two"></div>
-
-                    <img
-                        src="logo-removebg-preview.png"
-                        alt="SAIT CUSAT"
-                        class="main-logo"
-                    >
-
-                </section>
-
+            <div>
+                <strong>Industry Connections</strong>
+                <span>Bridging campus to career</span>
             </div>
 
         </div>
 
     </div>
 
-</main>
+</section>
 
 
 <!-- events -->
-
-<!-- ================= UPCOMING EVENTS ================= -->
-
  <!-- ================= UPCOMING EVENTS ================= -->
 <section id="events" class="events-section">
 
@@ -732,8 +803,8 @@
           <img src="./tcs (1).png" alt="TCS">
         </div>
 
-        <div class="recruiter-logo featured">
-          <img src="./cisco.png" alt="Cisco">
+        <div class="recruiter-logo ">
+          <img src="./cisco-removebg-preview.png" alt="Cisco">
         </div>
 
         <div class="recruiter-logo">
@@ -1088,11 +1159,10 @@ Location</a>
 
 
 <!-- Bootstrap JS -->
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="script.js"></script>
+<script src="demo.js"></script>
 
 </body>
 </html>
